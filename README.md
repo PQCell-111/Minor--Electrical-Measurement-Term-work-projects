@@ -1,2 +1,2 @@
-# Minor--Electrical-Measurement-Term-work-projects
-Upload your minor EM TW projects in this repository
+## 🔗 Project Link
+[Click here to view the project](https://yourprojectlink.com)

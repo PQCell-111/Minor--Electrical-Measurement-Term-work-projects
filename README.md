@@ -1,48 +1,46 @@
-### 📘 Minor Term Work Project (Sem 3)
-**Subject:** Electrical Measurements  
-**Name:** Vinayak Sunil Patil  
-**Roll No:** 128  
-**College:** AISSMS Institute of Information Technology  
+⚡ WattWatch: Smart Power Usage Dashboard
+
+Project Type: Minor Project (Electrical Measurement Term Work)
+Institution: AISSMS Institute of Information Technology
+Department: Information Technology
+Subject: Industrial Electrical Engineering
+Team Members: 3
+
+Aditya Deshmukh (Roll No. 18, IT-A)
+Mansavi Gundawar (Roll No. 32, IT-A)
+Pranay Gawande (Roll No. —, AIDS)
+
+Under the guidance of Prof. Saba Sheikh and Prof. Sachin Shelar
 
 ---
 
-## 📌 Project Description
-This project converts CSV (Comma Separated Values) data into a graphical format using **HTML**, **CSS**, and **JavaScript**.  
-It helps visualize tabular data as interactive charts for easy analysis.
+## 🔗 Live Project Link
+[Click here to view the project](https://electrical-minor-b7n3g2ewjrbmqhwzmofkmd.streamlit.app/)
+
+### 🔍 Project Overview
+WattWatch is an interactive data visualization dashboard built using Streamlit and Python.  
+It analyzes industrial or household power usage data from CSV files and provides insights into:
+
+- Average voltage, power, and power factor  
+- Total energy consumption (kWh)  
+- Estimated electricity bill  
+- Time-based graphical trends  
+
+This tool helps users monitor and optimize their electrical energy usage efficiently.
 
 ---
 
-## ⚙️ Steps to Run the Project (Online)
-1. Open the live project here:  
-   🔗 [Live Project Link](https://vinayaksunilpatil-web.github.io/CSV-to-Graphical-Representation/)
-2. Click on the **“Choose File”** button and select your `.csv` file.  
-3. The graph will be generated automatically using **Chart.js**.  
-4. You can switch between chart types (bar, line, etc.) from the dropdown.
+### 🧠 Key Features
+- 📂 Upload CSV files containing energy data  
+- 📊 Interactive graphs for voltage, power, and power factor  
+- 💡 Automatic time range selection and filtering  
+- 💰 Electricity bill estimation based on user rate  
+- 📥 Option to download filtered data  
 
 ---
 
-## 💻 Steps to Run the Project (Offline in VS Code)
-If you want to view or edit the project locally:
-1. Download all files (`index.html`, `style.css`, `script.js`) from this repository.
-2. Open the folder in **VS Code**.
-3. Install the **Live Server** extension in VS Code (by Ritwick Dey).
-4. Right-click on `index.html` → choose **“Open with Live Server”**.
-5. The project will open in your browser (usually `http://127.0.0.1:5500`).
-
----
-
-## 🧩 Technologies Used
-- HTML  
-- CSS  
-- JavaScript (with **Chart.js** library)
-
----
-
-## 🖼️ Example Output
-<img width="891" height="945" alt="image" src="https://github.com/user-attachments/assets/3bbcf57a-88dc-4fb3-8108-f89b36b0b5df" />
----
-
-## 📤 Submission
-Submitted as part of **Minor Term Work** under  
-**PQCell-111 (Electrical Measurement Projects)**.  
-
+### ⚙️ Technologies Used
+- Python  
+- Streamlit  
+- Pandas  
+- Matplotlib

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Meter Readings</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Chart.js Datalabels Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+<body>
+
+<!-- Login Screen -->
+<div class="container" id="login-screen">
+  <h1>🔌 Smart Meter Setup</h1>
+  <input type="text" id="meterId" placeholder="Enter Smart Meter ID">
+  <input type="password" id="password" placeholder="Enter Password">
+  <button id="loginBtn">Login</button>
+</div>
+
+<!-- Reading Screen -->
+<div class="container" id="reading-screen" style="display:none;">
+  <div class="top-bar">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" id="graphIcon" title="View Weekly/Monthly Graph">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828883.png" id="monthlyGraphIcon" title="View Monthly Graph" style="margin-left:10px;width:30px;cursor:pointer;">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" id="yearlyGraphIcon" title="View Yearly Graph" style="margin-left:10px;width:30px;cursor:pointer;">
+    <h1>⚡ Today's Readings</h1>
+  </div>
+  <div class="reading"><span class="label">Voltage:</span> <span id="voltage">0</span> V</div>
+  <div class="reading"><span class="label">Current:</span> <span id="current">0</span> A</div>
+  <div class="reading"><span class="label">Power:</span> <span id="power">0</span> W</div>
+  <div class="reading"><span class="label">Apparent Power:</span> <span id="apparent">0</span> VA</div>
+  <div class="reading"><span class="label">Reactive Power:</span> <span id="reactive">0</span> VAR</div>
+  <div class="reading"><span class="label">Energy:</span> <span id="energy">0</span> kWh</div>
+  <div class="reading"><span class="label">Total Cost:</span> ₹<span id="cost">0</span></div>
+  <div id="theft-alert" style="display:none;color:#fff;background:#dc3545;padding:10px;border-radius:8px;margin-top:10px;font-weight:bold;"></div>
+</div>
+
+<!-- Graph Modals -->
+<div id="graphModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>📊 Weekly Readings</h2>
+    <canvas id="readingChart"></canvas>
+  </div>
+</div>
+
+<div id="monthlyGraphModal" class="modal">
+  <div class="modal-content">
+    <span class="close-monthly">&times;</span>
+    <h2>📅 Monthly Electricity Generation</h2>
+    <canvas id="monthlyChart"></canvas>
+  </div>
+
+
+</div><div id="yearlyGraphModal" class="modal">
+  <div class="modal-content">
+    <span class="close-yearly">&times;</span>
+    <h2>📈 Yearly Electricity Generation</h2>
+    <canvas id="yearlyChart"></canvas>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

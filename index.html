@@ -1,50 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSV to Graphical Representation</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
-</head>
-<body>
-  <div class="container">
-    <h1>⚡ CSV to Graphical Representation</h1>
-    <p class="subtitle">Upload your CSV files and visualize meter data with stunning interactive charts</p>
 
-    <div class="upload-section">
-      <input type="file" id="csvFile" accept=".csv" />
-      <button id="uploadBtn">Upload CSV</button>
-    </div>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CSV to Graphical Visualization</title>
+    </head>
 
-    <div id="selector-section" class="hidden selector">
-      <div class="selectors-vertical">
-        <label for="xSelect">Select X-Axis:</label>
-        <select id="xSelect"></select>
-
-        <label>Select Y-Axis Parameters:</label>
-        <div id="ySelectContainer" class="checkbox-container"></div>
-
-        <label for="chartTypeSelect">Chart Type:</label>
-        <select id="chartTypeSelect">
-          <option value="line">Line</option>
-          <option value="bar">Bar</option>
-          <option value="doughnut">Doughnut</option>
-          <option value="pie">Pie</option>
-        </select>
-
-        <button id="generateBtn">Generate Graph</button>
-      </div>
-    </div>
-
-    <div class="chart-container">
-      <canvas id="dataChart"></canvas>
-    </div>
-
-    <div id="conclusion" class="conclusion hidden"></div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <body>
+      <div id="root"></div>
+      <script type="module" src="/src/main.tsx"></script>
+    </body>
+  </html>
+  
